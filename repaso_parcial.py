@@ -1,4 +1,3 @@
-a = """
 import math
 
 class Circulo:
@@ -21,7 +20,7 @@ c2 = Circulo(2)
 print (F"Area: {c1.area()}, Perimetro: {c1.perimetro()}, Diametro: {c1.diametro()}")
 print ()
 print (F"Area: {c2.area()}, Perimetro: {c2.perimetro()}, Diametro: {c2.diametro()}")
-"""
+
 
 class CuentaBancaria:
     def __init__(self, titular, saldo):
