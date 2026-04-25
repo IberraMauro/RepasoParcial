@@ -1,3 +1,4 @@
+a = """
 import math
 
 class Circulo:
@@ -20,3 +21,38 @@ c2 = Circulo(2)
 print (F"Area: {c1.area()}, Perimetro: {c1.perimetro()}, Diametro: {c1.diametro()}")
 print ()
 print (F"Area: {c2.area()}, Perimetro: {c2.perimetro()}, Diametro: {c2.diametro()}")
+"""
+
+class CuentaBancaria:
+    def __init__(self, titular, saldo):
+        self.titular = titular
+        self.saldo = saldo
+
+    @property
+    def saldo(self):
+        return self._saldo
+
+    @saldo.setter
+    def saldo(self, nuevo):
+        if nuevo < 0:
+            print ("ERROR")
+        else:
+            self._saldo = nuevo
+
+    def depositar(self, monto):
+        if monto > 0:
+            self.saldo += monto
+            print ("Saldo depositado")
+        else:
+            print ("ERROR")
+
+    def extraer(self, monto):
+        if (self.saldo - monto) < 0:
+            print ("Error saldo insuficiente")
+        else:
+            self.saldo -= monto
+            print ("Monto retirado")
+
+    def consultar_saldo(self):
+        print (f"Saldo: {self.saldo}")
+
