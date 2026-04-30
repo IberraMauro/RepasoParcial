@@ -88,6 +88,12 @@ if __name__ == "__main__":
     ))
 
 
+Cinco_dos = """Los metodos cuando se usa type() deben definirse como funcion
+externa, con el parametro self al igual que de la manera tradicional
+ya que la instancia al llamar el metodo automaticamente le envia self,
+si no lo tiene como parametro da como resultado error.
+"""
+
 
 
 
