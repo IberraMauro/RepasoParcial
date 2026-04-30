@@ -1,0 +1,12 @@
+Ejercicio 4.1:
+-¿Qué diferencia hay entre git add, git commit y git push?
+Git add prepara archivos para guardar, git commit los guarda en el repositorio local y git push los sube al repositorio remoto (nube).
+
+-¿Qué pasa si hago commit pero no hago push?
+No pasa nada, lo unico es que el archivo quedara guardado solo en el repositorio local, no aparecera en el remoto.
+
+-¿Para qué sirve el archivo .gitignore?
+Es un archivo que le dice a git que todos los archivos/carpetas escritos en el deben ser ignoradas por Git.
+
+-¿Qué diferencia hay entre un repositorio local y uno remoto?
+La diferencia es que el repositorio local solo se puede acceder desde la la computadora ya que esta guardado en su memoria, en cambio el repositorio remoto se puede acceder desde cualquier lugar ya que esta en la nube.
