@@ -1,3 +1,4 @@
+#--Ejercicio 1.1--#
 import math
 
 class Circulo:
@@ -21,6 +22,8 @@ print (F"Area: {c1.area()}, Perimetro: {c1.perimetro()}, Diametro: {c1.diametro(
 print ()
 print (F"Area: {c2.area()}, Perimetro: {c2.perimetro()}, Diametro: {c2.diametro()}")
 
+
+#--Ejercicio 1.2--#
 
 class CuentaBancaria:
     def __init__(self, titular: str, saldo: float) -> None:
@@ -55,38 +58,3 @@ class CuentaBancaria:
     def consultar_saldo(self):
         print (f"Saldo: {self.saldo}")
 
-
-#--Ejercicio 2--#
-print ()
-
-class Figura:
-    def area(self):
-        raise NotImplementedError("No se polimorfeo area()")
-
-class Cuadrado(Figura):
-    def __init__(self, base: float) ->None:
-        self.base = base
-
-    def area(self):
-        return self.base ** 2
-
-class Triangulo(Figura):
-    def __init__(self, base: float, altura: float) ->None:
-        self.base = base
-        self.altura = altura
-
-    def area(self):
-        return (self.base * self.altura) / 2
-
-
-class Circulo2(Figura):
-    def __init__(self, radio: float) -> None:
-        self.radio = radio
-
-    def area(self):
-        return math.pi * (self.radio ** 2)
-
-lista_ej2 = [Cuadrado(15), Triangulo(12, 6), Circulo2(24), Circulo2(9.6), Cuadrado(9.5), Triangulo(10, 8)]
-
-for x in lista_ej2:
-    print(x.area())
