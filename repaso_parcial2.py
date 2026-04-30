@@ -38,7 +38,7 @@ print()
 
 
 class Animal:
-    def __init__(self, nombre, edad):
+    def __init__(self, nombre: str, edad: int) ->None:
         self._nombre = nombre      # encapsulamiento (convención con guion bajo)
         self._edad = edad
 
