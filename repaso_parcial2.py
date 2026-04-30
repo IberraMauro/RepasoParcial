@@ -37,6 +37,51 @@ for x in lista_ej2:
 print()
 
 
+class Animal:
+    def __init__(self, nombre, edad):
+        self._nombre = nombre      # encapsulamiento (convención con guion bajo)
+        self._edad = edad
+
+    def get_nombre(self):          # getter
+        return self._nombre
+
+    def get_edad(self):
+        return self._edad
+
+    def hablar(self):              # abstracción: las hijas la implementan
+        raise NotImplementedError("Las subclases deben implementar hablar()")
+
+
+class Perro(Animal):               # herencia
+    def hablar(self):              # polimorfismo (override)
+        return "Guau!"
+
+
+class Gato(Animal):
+    def hablar(self):
+        return "Miau!"
+
+
+class Vaca(Animal):
+    def hablar(self):
+        return "Muu!"
+
+
+class Pato(Animal):
+    def hablar(self):
+        return "Quack!"
+
+
+class Oveja(Animal):
+    def hablar(self):
+        return "Bee soy un clon!"
+
+
+animales = [Perro("Toby", 3), Gato("Michi", 5), Vaca("Lola", 4), Pato("Patricio", 2), Oveja("Dolly", 0)]
+for a in animales:
+    print(f"{a.get_nombre()} ({a.get_edad()} años) dice: {a.hablar()}")
+
+
 
 
 
