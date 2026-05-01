@@ -10,9 +10,9 @@ Ejercicios:
 3.2 --> HECHO
 4.1 --> HECHO
 4.2 --> HECHO
-5.1 --> EN PROGRESO
-5.2 --> EN PROGRESO
-6.1 --> EN PROGRESO
-6.2 --> EN PROGRESO
-6.3 --> EN PROGRESO
+5.1 --> HECHO
+5.2 --> HECHO
+6.1 --> HECHO
+6.2 --> HECHO
+6.3 --> HECHO
 
